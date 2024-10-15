@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card" style="width: 17rem;">
+      <img [src]="product.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="card-title-div">
+          <h6 class="card-title">{{product.title}}</h6>
+        </div>
+        <div class="card-text-container">
+          <p class="card-text">Price: {{product.price}}</p>
+          <p class="card-text">Price: {{product.category}}</p>
+        </div>
+        <button (click)="sendId()" [routerLink]="['/view-products']" routerLinkActive="router-link-active"  class="btn btn-primary">More info...</button>
+  
+      </div>
+    </div>
+  </div>

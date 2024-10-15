@@ -1,0 +1,20 @@
+<div class="main-container">
+    <div class="image-details">
+        <img [src]="product.image" alt="Selected Image" class="main-image">
+        <div class="image-info">
+            <h2>{{product.title}}</h2>
+            <div class="additional-info">
+                <p><b>Product ID:</b> {{product.id}}</p>
+                <p><b>Price:</b> {{product.price}}</p>
+                <p><b>Category:</b> {{product.category}}</p>
+                <p><b>Description:</b> {{product.description}}</p>
+
+                <div class="rating">
+                    <p><b>Rate:</b> {{product.rating.rate}}</p>
+                    <p><b>Count:</b> {{product.rating.count}}</p>
+                </div>
+            </div>
+            <button [routerLink]="['/products-list']" routerLinkActive="router-link-active" class="back-btn">Back</button>
+        </div>
+    </div>
+</div>
